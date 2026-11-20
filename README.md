@@ -124,19 +124,3 @@ WatchTogether uses a tiered playback architecture to play virtually any video fi
 - No secrets committed to source control (templates provided in `.env.example`).
 
 ---
-
-## Tests
-
-- **Backend**: `cd backend && pytest` (70+ unit and integration tests). Tests cover room lifecycles, moderation, tokens, WebSockets, permissions, local sync, media companions, and the headless movie bot.
-- **E2E**: Puppeteer/Chromium test suites under `e2e/` (`run.mjs`, `test_enhancements.mjs`, `bench.mjs`).
-
----
-
-## Demo Video & Marketing Assets
-
-Automated Playwright + FFmpeg multi-context demo recording scripts are included in `demo/`:
-- `python demo/record.py`: Drives 3 simultaneous Chromium contexts (Host Deku, Aarav, Mira) with cursor injection and mock WebRTC devices.
-- `python demo/edit.py`: Trims, retimes, composes Picture-in-Picture insets, burns storyboard captions, and outputs:
-  - `demo/out/watchtogether-demo.mp4`: 16:9 1080p demo video (silent, ~79s).
-  - `demo/out/watchtogether-demo-square.mp4`: 1:1 square video (1080x1080) for LinkedIn / mobile feeds.
-  - `demo/out/screenshot-*.png`: High-resolution product screenshots.
