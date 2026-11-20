@@ -1,0 +1,104 @@
+# ==============================================================================
+# WatchTogether - .gitignore
+# ==============================================================================
+
+# Dependencies / Virtual Environments
+node_modules/
+frontend/node_modules/
+e2e/node_modules/
+.venv/
+backend/.venv/
+venv/
+env/
+ENV/
+
+# Build outputs
+frontend/dist/
+dist/
+build/
+*.egg-info/
+
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+backend/.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local configurations
+.env
+.env.*
+*.env
+backend/.env
+frontend/.env
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# Databases and runtime data
+*.db
+*.sqlite
+*.sqlite3
+watch_together.db
+backend/*.db
+backend/media_tmp/
+backend/uploads/
+tmp/
+%temp%/
+
+# Logs, scratch files, and bundler caches
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vite/
+.cache/
+lk.json
+
+# Local tools and binaries
+.tools/
+cloudflared.exe
+livekit-server.exe
+livekit-server
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Media files and test recordings
+*.mkv
+*.mp4
+*.avi
+*.mov
+*.webm
+*.flv
+*.m4v
+*.ts
+*.m2ts
+demo/raw/
+demo/assets/
+demo/bin/
+e2e/fixtures/
+e2e/screenshots/
+e2e/screens/
+e2e/test_*.mkv
+e2e/test_*.webm
+
+# Preserved final demo media outputs
+!demo/out/
+!demo/out/watchtogether-demo.mp4
+!demo/out/watchtogether-demo-square.mp4
+!demo/out/*.png
+
+# Safe removed backup folder
+_removed/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
